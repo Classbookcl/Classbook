@@ -119,10 +119,12 @@ p {
 @media (max-width: 767px) {
     .image-container {
         height: 10vh; /* Ajusta esta altura para mostrar menos imagen en móviles */
+        margin: 0; /* Elimina cualquier margen */
+        padding: 0; /* Elimina cualquier padding */
     }
 
     .image-container img {
-        height: 70%;
+        height: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+        object-fit: cover;
     }
 }
-
