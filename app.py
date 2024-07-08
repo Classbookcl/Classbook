@@ -6,9 +6,9 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/schedule')
-def schedule():
-    return render_template('schedule.html')
+@app.route('/quienes-somos')
+def quienes_somos():
+    return render_template('quienes_somos.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
