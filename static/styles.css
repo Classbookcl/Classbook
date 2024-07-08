@@ -17,6 +17,7 @@
 /* Estilos existentes */
 body {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
@@ -27,7 +28,7 @@ body {
 .image-container {
     flex: 1.5;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     background-color: rgba(242, 244, 243, 1); /* Color de fondo exacto */
@@ -35,9 +36,9 @@ body {
 
 .image-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .text-container {
@@ -49,17 +50,17 @@ body {
     text-align: center;
     background-color: rgba(242, 244, 243, 0.8); /* Fondo semitransparente */
     padding: 20px;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 0 10px 10px;
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 4em;
     margin: 0;
     padding-bottom: 20px;
 }
 
 .smaller-title {
-    font-size: 4em; /* Ajuste para el título más pequeño en "¿Quiénes somos?" */
+    font-size: 2.5em; /* Ajuste para el título más pequeño en "¿Quiénes somos?" */
 }
 
 p {
@@ -88,4 +89,28 @@ p {
 
 .text-container .button:last-of-type {
     margin-top: 20px;
+}
+
+/* Ajustes responsivos */
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+    }
+
+    .image-container {
+        flex: 1.5;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .text-container {
+        border-radius: 0 10px 10px 0;
+    }
+
+    h1 {
+        font-size: 6em;
+    }
+
+    .smaller-title {
+        font-size: 4em;
+    }
 }
