@@ -114,3 +114,14 @@ p {
         font-size: 4em;
     }
 }
+
+/* Mostrar menos imagen en dispositivos móviles */
+@media (max-width: 767px) {
+    .image-container {
+        height: 30vh; /* Ajusta esta altura para mostrar menos imagen en móviles */
+    }
+
+    .image-container img {
+        height: 100%;
+    }
+}
