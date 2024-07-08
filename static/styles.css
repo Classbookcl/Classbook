@@ -80,6 +80,8 @@ p {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     margin-top: 10px;
+    width: 200px; /* Asegura que todos los botones tengan el mismo tamaño */
+    text-align: center;
 }
 
 .button:hover {
@@ -127,4 +129,10 @@ p {
         height: 100%; /* Asegura que la imagen ocupe todo el contenedor */
         object-fit: cover;
     }
+}
+
+p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: justify; /* Justifica el texto */
 }

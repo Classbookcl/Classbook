@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classbook - ¿Cómo funciona?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="fade-enter">
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='imagen.jpg') }}" alt="Imagen">
+    </div>
+    <div class="text-container">
+        <h1 class="smaller-title">¿Cómo funciona?</h1>
+        <p>Aquí irá la explicación de cómo funciona el servicio.</p>
+        <a href="/" class="button">Volver a la página inicial</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
