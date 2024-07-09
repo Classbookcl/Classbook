@@ -52,7 +52,18 @@ body {
     padding: 20px;
     border-radius: 0 0 10px 10px;
 }
+ul {
+    list-style-type: disc; /* Estilo de lista con puntos */
+    text-align: justify;
+    padding-left: 40px; /* Sangría para la lista */
+    margin: 20px 0;
+    
+}
 
+ul li {
+    font-size: 1.5em;
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
 h1 {
     font-size: 4em;
     margin: 0;
