@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Manejar el evento de navegación hacia atrás
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            window.location.reload();
+        }
+    });
+
     document.querySelectorAll('a').forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault();
