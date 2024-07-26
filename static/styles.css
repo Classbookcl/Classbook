@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgba(242, 244, 243, 1); /* Color de fondo exacto */
     color: #333;
 }
@@ -52,6 +52,7 @@ body {
     text-align: center;
     background-color: rgba(242, 244, 243, 0.8); /* Fondo semitransparente */
     padding: 20px;
+    margin-top: 40px; 
     border-radius: 0 0 10px 10px;
 }
 
@@ -63,7 +64,7 @@ ul {
 }
 
 ul li {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 10px; /* Espacio entre los elementos de la lista */
 }
 
@@ -74,7 +75,7 @@ h1 {
 }
 
 .smaller-title {
-    font-size: 2.5em; /* Ajuste para el título más pequeño en "¿Quiénes somos?" */
+    font-size: 2.1em; /* Ajuste para el título más pequeño en "¿Quiénes somos?" */
 }
 
 p {
@@ -162,17 +163,40 @@ p {
 
 /* Estilos para las nuevas imágenes */
 .small-image-container {
-    text-align: center;
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    justify-content: center; /* Centra las imágenes horizontalmente dentro del contenedor */
     margin: 20px 0;
 }
 
-.small-image {
-    width: 20%; /* Ajusta el tamaño de las nuevas imágenes */
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 0 25px; /* Espacio entre las imágenes */
+.image-item {
+    margin: 0 15px; /* Espacio entre las imágenes */
 }
+
+.small-image {
+    width: 150px; /* Establece un ancho fijo para las imágenes */
+    height: 150px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-radius: 10px;
+}
+
+.image-caption {
+    font-size: 0.8em; /* Tamaño de fuente pequeño */
+    color: #333; /* Color de texto */
+    margin-top: 5px; /* Espacio encima del nombre */
+    text-align: center; /* Centra el texto debajo de la imagen */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    .small-image {
+        width: 100px; /* Reduce el tamaño de las imágenes en dispositivos móviles */
+        height: 100px; /* Ajusta la altura proporcionalmente */
+    }
+}
+
+
+
+
 .text-container {
     position: relative; /* Asegúrate de que el contenedor tenga una posición relativa */
     padding-bottom: 80px; /* Espacio para el logo en el fondo */
