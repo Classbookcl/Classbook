@@ -32,6 +32,8 @@ body {
     align-items: center;
     overflow: hidden;
     background-color: rgba(242, 244, 243, 1); /* Color de fondo exacto */
+    margin: 0;
+    padding: 0;
 }
 
 .image-container img {
@@ -132,14 +134,23 @@ p {
 /* Mostrar menos imagen en dispositivos móviles */
 @media (max-width: 767px) {
     .image-container {
-        height: 10vh; /* Ajusta esta altura para mostrar menos imagen en móviles */
+        height: 20vh; /* Ajusta esta altura para mostrar menos imagen en móviles */
         margin: 0; /* Elimina cualquier margen */
         padding: 0; /* Elimina cualquier padding */
     }
 
     .image-container img {
-        height: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+        width: 100%;
+        height: 100%;
         object-fit: cover;
+    }
+
+    .text-container {
+        padding: 10px; /* Ajuste de padding para móviles */
+    }
+
+    ul {
+        padding-left: 20px; /* Ajuste de padding para móviles */
     }
 }
 
@@ -161,4 +172,22 @@ p {
     object-fit: cover;
     border-radius: 10px;
     margin: 0 25px; /* Espacio entre las imágenes */
+}
+.text-container {
+    position: relative; /* Asegúrate de que el contenedor tenga una posición relativa */
+    padding-bottom: 80px; /* Espacio para el logo en el fondo */
+}
+
+.whatsapp-container {
+    position: absolute;
+    bottom: 40px; /* Margen de 40px desde el borde inferior del contenedor */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente el contenedor */
+    display: flex;
+    justify-content: center; /* Centra el logo dentro del contenedor */
+}
+
+.whatsapp-logo {
+    width: 50px; /* Ajusta el tamaño del logo de WhatsApp */
+    height: auto;
 }
