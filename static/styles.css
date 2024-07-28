@@ -210,7 +210,7 @@ p {
     /* Agrega márgenes laterales a los textos de "¿Quiénes somos?" y "Cómo funciona" */
     .quienes-somos-text,
     .como-funciona-text {
-        margin-left: 15px; /* Ajuste del margen izquierdo */
+        margin-left: 1px; /* Ajuste del margen izquierdo */
         margin-right: 15px; /* Ajuste del margen derecho */
     }
 }
